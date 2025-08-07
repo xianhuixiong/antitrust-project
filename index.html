@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞争动态监测服务平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home-page">
+  <!-- Header with navigation and search -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>竞争动态监测平台</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="active">首页</a>
+        <a href="experts.html">专家库</a>
+        <a href="institutions.html">机构库</a>
+        <a href="lawcase.html">法规案例</a>
+        <a href="reports.html">报告专区</a>
+        <a href="map.html">数据地图</a>
+        <a href="admin.html">后台管理</a>
+      </nav>
+      <div class="header-right">
+        <input type="text" id="global-search" placeholder="搜索...">
+        <button id="search-btn">搜索</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero banner with slider -->
+  <section class="hero-section">
+    <div class="slider" id="hero-slider">
+      <div class="slide active"><img src="assets/banner1.png" alt="Banner 1"></div>
+      <div class="slide"><img src="assets/banner2.png" alt="Banner 2"></div>
+    </div>
+    <div class="slider-indicators" id="slider-indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+    </div>
+  </section>
+
+  <!-- Data overview cards -->
+  <section class="overview-section container">
+    <h2 class="section-title">数据总览</h2>
+    <div class="cards" id="overview-cards">
+      <!-- cards will be populated by JS -->
+    </div>
+  </section>
+
+  <!-- Feature entrance buttons -->
+  <section class="features-section container">
+    <h2 class="section-title">功能入口</h2>
+    <div class="features-grid">
+      <a href="experts.html" class="feature-item">🧑‍🎓<span>专家库</span></a>
+      <a href="institutions.html" class="feature-item">🏢<span>机构库</span></a>
+      <a href="lawcase.html" class="feature-item">📜<span>法规案例</span></a>
+      <a href="reports.html" class="feature-item">📄<span>报告专区</span></a>
+      <a href="map.html" class="feature-item">🗺️<span>数据地图</span></a>
+      <a href="admin.html" class="feature-item">🛠️<span>后台管理</span></a>
+    </div>
+  </section>
+
+  <!-- News section -->
+  <section class="news-section container">
+    <h2 class="section-title">最新动态</h2>
+    <div class="news-list" id="news-list">
+      <!-- news items will be populated by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>© 2025 竞争政策与评估中心. 保留所有权利。</p>
+        <p>联系邮箱：info@example.com</p>
+      </div>
+      <div class="footer-right">
+        <p>友情链接：</p>
+        <ul>
+          <li><a href="#">国家市场监督管理总局</a></li>
+          <li><a href="#">反垄断局</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Load scripts at end of body for file:// compatibility -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

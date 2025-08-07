@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专家详情 - 竞争动态监测服务平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="expert-detail-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>竞争动态监测平台</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">首页</a>
+        <a href="experts.html" class="active">专家库</a>
+        <a href="institutions.html">机构库</a>
+        <a href="lawcase.html">法规案例</a>
+        <a href="reports.html">报告专区</a>
+        <a href="map.html">数据地图</a>
+        <a href="admin.html">后台管理</a>
+      </nav>
+      <div class="header-right">
+        <input type="text" id="global-search" placeholder="搜索...">
+        <button id="search-btn">搜索</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container expert-detail-container">
+    <h1 class="page-title">专家详情</h1>
+    <div class="expert-detail-layout">
+      <!-- left profile card -->
+      <div class="expert-profile" id="expert-profile">
+        <!-- filled by JS -->
+      </div>
+      <!-- right tabbed content -->
+      <div class="expert-tabs">
+        <div class="tab-header">
+          <button class="tab-link active" data-tab="research">研究方向</button>
+          <button class="tab-link" data-tab="outputs">成果引用</button>
+          <button class="tab-link" data-tab="projects">项目经历</button>
+          <button class="tab-link" data-tab="media">媒体发言</button>
+        </div>
+        <div class="tab-content" id="tab-research"></div>
+        <div class="tab-content" id="tab-outputs" style="display:none;"></div>
+        <div class="tab-content" id="tab-projects" style="display:none;"></div>
+        <div class="tab-content" id="tab-media" style="display:none;"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>© 2025 竞争政策与评估中心. 保留所有权利。</p>
+        <p>联系邮箱：info@example.com</p>
+      </div>
+      <div class="footer-right">
+        <p>友情链接：</p>
+        <ul>
+          <li><a href="#">国家市场监督管理总局</a></li>
+          <li><a href="#">反垄断局</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Load scripts at end of body for file:// compatibility -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
